@@ -1,0 +1,11 @@
+[versions]
+# https://github.com/JetBrains/java-annotations
+annotations = "24.1.0"
+# https://github.com/manifold-systems/manifold/tree/master/manifold-deps-parent/manifold-delegation
+manifold = "2024.1.14"
+
+[libraries]
+annotations = { group = "org.jetbrains", name = "annotations", version.ref = "annotations" }
+
+manifold-delegate-runtime = { group = "systems.manifold", name = "manifold-delegation-rt", version.ref = "manifold" }
+manifold-delegate-codegen = { group = "systems.manifold", name = "manifold-delegation", version.ref = "manifold" }
